@@ -1,7 +1,7 @@
 <?php
 require_once("support.php");
 require_once("dbLogin.php");
-require("setupDB.php");
+require_once("setupDB.php");
 
 $title = "TA Office Hours Login";
 $topPart = <<<EOBODY
@@ -27,21 +27,12 @@ EOBODY;
 $bottomPart = "";
 if (isset($_POST["submitLogin"])) {
     /* Connecting to the database */
-    //$db_connection = new mysqli($host, $user, $password, $database);
-    //if ($db_connection->connect_error) {
-    //    die($db_connection->connect_error);
-    //}
-
-    $db_connection = initDBConnection($host, $user, $dbpassword, $database);
-    createDBs($db_connection);
-    //probably need to load sample data into the databases so that usernames and passwords and stuff exist
+    initDBConnection($host, $user, $dbpassword, $database);
 
     $uid = mysqli_real_escape_string($db_connection, trim($_POST["uid"]));
     $password = mysqli_real_escape_string($db_connection, trim($_POST["password"]));
-    echo "uid is $uid";
 
-    $query = sprintf("select * from tblusers where uid='$uid';");//, $uid);
-    echo "$query";
+    $query = sprintf("select * from tblusers where uid='%s'", $uid);
 
     /* Executing query */
     $result = $db_connection->query($query);
@@ -51,7 +42,7 @@ if (isset($_POST["submitLogin"])) {
         /* Number of rows found */
         $num_rows = $result->num_rows;
         if ($num_rows === 0) {
-            echo "No User Found!(initial)";
+            echo "No User Found!";
         } else {
             $result->data_seek(0);
             $row = $result->fetch_array(MYSQLI_ASSOC);
@@ -68,7 +59,7 @@ if (isset($_POST["submitLogin"])) {
                     /* Number of rows found */
                     $num_rows = $result->num_rows;
                     if ($num_rows === 0) {
-                        echo "No User Found!(second)";
+                        echo "No User Found!";
                     } else {
                         $result->data_seek(0);
                         $row = $result->fetch_array(MYSQLI_ASSOC);

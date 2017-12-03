@@ -1,6 +1,8 @@
 <?php
 require_once("support.php");
 require_once("dbLogin.php");
+require_once("setupDB.php");
+
 session_start();
 $title = "TA Office Hours Class List";
 $errorMessage = "";
@@ -28,13 +30,9 @@ a {
             </tr>	
 EOBODY;
 
+initDBConnection($host, $user, $dbpassword, $database);
 
-$db_connection = new mysqli($host, $user, $dbpassword, $database);
-if ($db_connection->connect_error) {
-    die($db_connection->connect_error);
-}
-
-$query = sprintf("select * from tblregistered join tblcourses on tblregistered.courseid = tblcourses.courseid where uid='%s' order by tblcourses.coursename ASC", $_SESSION['uid']);
+$query = sprintf("select * from tblregistered join tblcourses on tblregistered.courseid = tblcourses.courseid where uid=%s order by tblcourses.coursename ASC", $_SESSION['uid']);
 $result = $db_connection->query($query);
 
 if (!$result) {
@@ -61,10 +59,7 @@ $currentCourses .= <<<EOBODY
 EOBODY;
 
 /* Connecting to the database */
-$db_connection = new mysqli($host, $user, $dbpassword, $database);
-if ($db_connection->connect_error) {
-    die($db_connection->connect_error);
-}
+initDBConnection($host, $user, $dbpassword, $database);
 
 $query = sprintf("select * from tblcourses");
 $result = $db_connection->query($query);

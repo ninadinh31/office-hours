@@ -1,7 +1,5 @@
 <?php
 include_once('support.php');
-
-
 $title = "TA Office Hours Waiting Room";
 $body = <<<EOBODY
 <style>
@@ -34,10 +32,6 @@ padding: 0em 1.25em 0em 1.25em;
                 <th style="width: 30%;">Name</th>
             </tr>	
 EOBODY;
-
-
-
-
 $body .= <<<REST
         </table><br/><br/>
         <input type="submit" class="btn btn-default" value="Add Name to Queue"/>
@@ -49,8 +43,6 @@ $body .= <<<REST
         <h4>Timer: </h4>
 	</div>
 REST;
-
-
 # Generating final page
 echo generatePage($body, $title);
 ?>
