@@ -13,7 +13,7 @@ $topPart = <<<EOBODY
 }
 </style>
 <div class="form-group panel panel-default">
-    <h1>Login</h1><br/>
+    <h3><strong>Login</strong></h3><br/>
 		<form action="{$_SERVER['PHP_SELF']}" method="post">
 			<strong>UID: </strong><input type="uid" class="form-control" name="uid"/><br/><br/>
             <strong>Password: </strong><input type="password" class="form-control" name="password"/><br/><br/>
@@ -66,6 +66,8 @@ if (isset($_POST["submitLogin"])) {
                         $result->data_seek(0);
                         $row = $result->fetch_array(MYSQLI_ASSOC);
 
+                        session_start();
+                        $_SESSION['uid'] = $uid;
                         header("Location: classList.php");
                     }
                 }

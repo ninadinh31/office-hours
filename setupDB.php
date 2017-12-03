@@ -16,7 +16,7 @@ function createDBs($connection){
     $connection->query($query);
     $query = "create table tblcourses (courseid int(2) primary key not null, coursename varchar(50), semester enum('F', 'S'),  year int(4))";
     $connection->query($query);
-    $query = "create table tblregistered (uid varchar(8) primary key not null, usertype enum('ta', 'student'), courseid int(2))";
+    $query = "create table tblregistered (uid varchar(8) primary key not null, usertype enum('TA', 'Student'), courseid int(2))";
     $connection->query($query);
 }
 
