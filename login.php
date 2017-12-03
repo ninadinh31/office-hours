@@ -18,7 +18,7 @@ $topPart = <<<EOBODY
 			<strong>UID: </strong><input type="uid" class="form-control" name="uid"/><br/><br/>
             <strong>Password: </strong><input type="password" class="form-control" name="password"/><br/><br/>
 
-			<input type="submit" class="btn btn-default" name="submitLogin" value="Login"/>
+			<input type="submit" class="btn btn-info" name="submitLogin" value="Login"/>
 		</form>
 </div>
 EOBODY;
@@ -66,28 +66,7 @@ if (isset($_POST["submitLogin"])) {
                         $result->data_seek(0);
                         $row = $result->fetch_array(MYSQLI_ASSOC);
 
-                        $topPart = <<<EOBODY
-                <style>
-                .form-group {
-                    width: 30%;
-                    margin: auto;
-                    margin-top: 3.5em;
-                    padding: 1.25em;
-                }
-                </style>
-                <div class="form-group panel panel-default">
-                    <h1>Pick a Course:</h1><br/>
-                        <form action="{$_SERVER['PHP_SELF']}" method="post">
-                            <table class="table table-bordered" style="margin-right: 1.2em;">
-                            <tr>
-                                <th>Course</th>
-                                <th>User Type</th>
-                            </tr>	
-                            
-                        </table>
-                        </form>
-                </div>
-EOBODY;
+                        header("Location: classList.php");
                     }
                 }
             } else {
