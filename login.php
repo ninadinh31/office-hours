@@ -27,7 +27,7 @@ EOBODY;
 $bottomPart = "";
 if (isset($_POST["submitLogin"])) {
     /* Connecting to the database */
-    initDBConnection($host, $user, $dbpassword, $database);
+    $db_connection = initDBConnection($host, $user, $dbpassword, $database);
 
     $uid = mysqli_real_escape_string($db_connection, trim($_POST["uid"]));
     $password = mysqli_real_escape_string($db_connection, trim($_POST["password"]));
