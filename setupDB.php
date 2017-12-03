@@ -28,6 +28,8 @@ function createTables($connection){
 
     $query = "insert into tblcourses (coursename) values ('CMSC389N'), ('CMSC216'), ('CMSC420'), ('CMSC433'), ('CMSC330'), ('CMSC351'), ('CMSC417'), ('CMSC434'), ('CMSC453')";
     $connection->query($query);
+    $query = "insert into tblusers (firstname, lastname, uid, email, password) values ('testfirst', 'testlast', '1234', 'email@gmail.com', '1234')";
+    $connection->query($query);
 }
 
 ?>
