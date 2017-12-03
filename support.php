@@ -10,7 +10,6 @@ function generatePage($body, $title="Example") {
         
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
         <script src="support.js"></script>
         <title>$title</title>	
     </head>
