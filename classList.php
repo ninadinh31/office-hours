@@ -28,12 +28,13 @@ a {
             </tr>	
 EOBODY;
 
-$db_connection = new mysqli($host, $user, $password, $database);
+
+$db_connection = new mysqli($host, $user, $dbpassword, $database);
 if ($db_connection->connect_error) {
     die($db_connection->connect_error);
 }
 
-$query = sprintf("select * from tblregistered join tblcourses on tblregistered.courseid = tblcourses.courseid where uid=%s order by tblcourses.coursename ASC", $_SESSION['uid']);
+$query = sprintf("select * from tblregistered join tblcourses on tblregistered.courseid = tblcourses.courseid where uid='%s' order by tblcourses.coursename ASC", $_SESSION['uid']);
 $result = $db_connection->query($query);
 
 if (!$result) {
@@ -60,7 +61,7 @@ $currentCourses .= <<<EOBODY
 EOBODY;
 
 /* Connecting to the database */
-$db_connection = new mysqli($host, $user, $password, $database);
+$db_connection = new mysqli($host, $user, $dbpassword, $database);
 if ($db_connection->connect_error) {
     die($db_connection->connect_error);
 }
