@@ -99,7 +99,7 @@ $currentCourses .= <<<EOBODY
     </table>
 	</form>
 	
-	<a class="btn btn-info" href="#" role="button" style="display: table; margin: 0 auto;">Show Queues</a>
+	<a class="btn btn-info" href="main.php" role="button" style="display: table; margin: 0 auto;">Show Queues</a>
 </div>
 EOBODY;
 

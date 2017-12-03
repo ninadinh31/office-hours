@@ -2,10 +2,11 @@
 
 function initDBConnection($host, $user, $dbpassword, $database){
 
-    $db_connection = new mysqli($host, $user, $dbpassword, $database);
+    @$db_connection = new mysqli($host, $user, $dbpassword, $database);
     if ($db_connection->connect_error && $db_connection->connect_errno == 1049) {
-        die('Connect error' . $db_connection->connect_errno);
-        createDatabase($host, $user, $dbpassword);
+        $db_connection = new mysqli($host, $user, $dbpassword);
+        createDatabase($db_connection);
+
         $db_connection = new mysqli($host, $user, $dbpassword, $database);
         createTables($db_connection);
     }
