@@ -318,7 +318,7 @@ echo ($_POST['helpNextUid']);
             $row = $result->fetch_array(MYSQLI_ASSOC);
             $query2 = sprintf("delete from tblqueue where uid='%s' and courseid='%s'", $_POST['helpNextUid'], $_POST['helpNextCourseId']);
             $result2 = $db_connection->query($query2);
-            
+
         }
     }
 

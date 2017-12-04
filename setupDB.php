@@ -35,6 +35,13 @@ function createTables($connection){
     $query = "insert into tblusers (firstname, lastname, uid, email, password) values ('testfirst', 'testlast', '1234', 'email@gmail.com', '1234')";
     $connection->query($query);
 
+    //image insertion
+    $fileToInsert = "testudo.jpg";
+    $fileData = addslashes(file_get_contents($fileToInsert));
+    $docMimeType = "image/jpeg";
+    $query = "insert into tbltas (pictureName, docMimeType, picture) values ";
+    $query .= "('{$fileToInsert}', '{$docMimeType}', '{$fileData}')";
+    $connection->query($query);
 }
 
 ?>
