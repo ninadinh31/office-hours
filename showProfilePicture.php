@@ -8,7 +8,7 @@
     $fileToRetrieve = $_POST['ta_name'].".jpg";
     $body = $fileToRetrieve;
 
-    $query = "select picture, docMimeType from tbltas where picture = '{$fileToRetrieve}'";
+    $query = "select picture, docMimeType from tbltas where pictureName = '{$fileToRetrieve}'";
     $result = $db_connection->query($query);
 
     if ($result) {

@@ -14,7 +14,7 @@ function initDBConnection($host, $user, $dbpassword, $database){
 }
 
 function createDatabase($connection) {
-    $query = "create database officehours";
+    $query = "create database officehours2";
     $connection->query($query);
 }
 function createTables($connection){
@@ -40,7 +40,7 @@ function createTables($connection){
     $fileData = addslashes(file_get_contents($fileToInsert));
     $docMimeType = "image/jpeg";
     $query = "insert into tbltas (pictureName, docMimeType, picture) values ";
-    $query .= "('{$fileToInsert}', '{$docMimeType}', '{$fileData}')";
+    $query .= "('1234.jpg', '{$docMimeType}', '{$fileData}')";
     $connection->query($query);
 }
 
