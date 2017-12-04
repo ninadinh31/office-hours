@@ -13,6 +13,8 @@ if(isset($_POST["submitRegistration"])){
     $pass = $_POST["password"];
     $query = "insert into tblusers values('$firstname', '$lastname', '$uid', '$email', '$pass')";
     $connection->query($query);
+
+    header("Location: login.php");
 }
 $topPart = <<<EOBODY
 <script src="validate.js"></script>

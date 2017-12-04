@@ -3,5 +3,5 @@
 	$host = "localhost";
 	$user = "dbuser";
 	$dbpassword = "goodbyeWorld";
-	$database = "officehours";
+	$database = "officehours2";
 ?>
