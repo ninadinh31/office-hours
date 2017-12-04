@@ -81,15 +81,23 @@ if (!$result) {
             $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
 
             if ($rowGetTaName['currenttaid'] != "") {
-                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currenttaid']);
+                $taName = $rowGetTaName['currenttaid'];
+                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $taName);
                 $resultGetTaName = $db_connection->query($queryGetTaName);
                 $resultGetTaName->data_seek(0);
                 $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
                 $firstname = $rowGetTaName['firstname'];
                 $lastname = $rowGetTaName['lastname'];
+                $TAPicture = $taName.".jpg";
+                /*$queryGetTAPic = sprintf("select * from tbltas where uid='%s'", $rowGetTaName['currenttaid']);
+                $resultGetTaPic = $db_connection->query($queryGetTAPic);
+                $resultGetTaPic->data_seek(0);
+                $rowGetTaPic = $resultGetTaPic->fetch_array(MYSQLI_ASSOC);
+                $TAPicture =*/
             } else {
                 $firstname = "Currently None";
                 $lastname = "";
+                $TAPicture="";
             }
 
             $currStudId = "currStud" . $row['courseid'];
@@ -99,7 +107,15 @@ if (!$result) {
             <form action="{$_SERVER['PHP_SELF']}" method="post">
             <div class="form-group panel panel-default">
             <h4><strong>Course:</strong> {$row['coursename']}</h4>
-            <h4><strong>TA:</strong> {$firstname} {$lastname}</h4><br/> 
+            <h4><strong>TA:</strong> {$firstname} {$lastname}</h4><br/>
+            <img src="$TAPicture" height="100px">
+            <form action="showProfilePicture.php" method="post">
+                <input type="hidden" name="ta_name" value="$taName">
+                <input type="submit" id="submit" name="submit" class="btn btn-info" value="Click to See Enlarged Picture" style="display: table; margin: 0 auto;">
+            </form>
+
+            <br/>
+
             <h4><strong>Queue:</strong></h4>
                 <table class="table table-hover table-striped" style="margin-right: 1.2em;">
                     <tr>
