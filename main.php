@@ -76,19 +76,54 @@ if (!$result) {
             <h4><strong>Course:</strong> {$row['coursename']}</h4>
             <h4><strong>TA:</strong></h4>
 
-            <h4><strong>Queue:</strong></h4>
+                        <h4><strong>Queue:</strong></h4>
                 <table class="table table-hover table-striped" style="margin-right: 1.2em;">
                     <tr>
                         <th style="width: 10%;">Priority</th>
                         <th style="width: 30%;">Check-in Time</th>
                         <th style="width: 30%;">Wait Time</th>
                         <th style="width: 30%;">Name</th>
-                    </tr>	
-</table><br/>
+                    </tr>
+EOBODY;
+
+            // show course queue
+            $query2 = sprintf("select * from tblqueue join tblusers on tblqueue.uid = tblusers.uid where courseid='%s' order by tblqueue.queuecheckintime ASC", $row['courseid']);
+            $result2 = $db_connection->query($query2);
+
+            if (!$result2) {
+                die("Retrieval failed: " . $db_connection->error);
+            } else {
+                $num_rows2 = $result2->num_rows;
+                echo($num_rows2);
+                if ($num_rows2 > 0) {
+                    $result2->data_seek(0);
+                    $row2 = $result2->fetch_array(MYSQLI_ASSOC);
+
+                    for ($row_index2 = 0; $row_index2 < $num_rows2; $row_index2++) {
+                        $result2->data_seek($row_index2);
+                        $row2 = $result2->fetch_array(MYSQLI_ASSOC);
+                        $priority = $row_index2 + 1;
+                        $time_elapsed = floor((strtotime(date("Y-m-d H:i:s")) - strtotime($row2['queuecheckintime'])) / 60);
+                        $check_in_time = date("g:i a", strtotime($row2['queuecheckintime']));
+                        $body .= <<<EOBODY
+                        <tr>
+                            <td>{$priority}</td>
+                            <td>{$check_in_time}</td>
+                            <td>{$time_elapsed} min</td>
+                            <td>{$row2['firstname']} {$row2['lastname']}  </td>
+                        </tr>
+EOBODY;
+                    }
+                }
+                $body .= <<<EOBODY
+                 </table ><br/>
+
+
 <input type="submit" name="startTaHours" class="btn btn-info" value="Start TA Hours" style="display: table; margin: 0 auto;"/>
 </div>
 </form>
 EOBODY;
+            }
 
         }
     }
@@ -129,24 +164,30 @@ if (!$result) {
 EOBODY;
 
             // show course queue
-            $query2 = sprintf("select * from tblqueue join tblusers on tblqueue.uid = tblusers.uid where courseid='%s' order by tblqueue.queuecheckintime ASC", $row['coursename']);
+            $query2 = sprintf("select * from tblqueue join tblusers on tblqueue.uid = tblusers.uid where courseid='%s' order by tblqueue.queuecheckintime ASC", $row['courseid']);
             $result2 = $db_connection->query($query2);
 
             if (!$result2) {
                 die("Retrieval failed: " . $db_connection->error);
             } else {
                 $num_rows2 = $result2->num_rows;
+                echo ($num_rows2);
                 if ($num_rows2 > 0) {
                     $result2->data_seek(0);
                     $row2 = $result2->fetch_array(MYSQLI_ASSOC);
 
                     for ($row_index2 = 0; $row_index2 < $num_rows2; $row_index2++) {
+                        $result2->data_seek($row_index2);
+                        $row2 = $result2->fetch_array(MYSQLI_ASSOC);
+                        $priority = $row_index2 + 1;
+                        $time_elapsed = floor((strtotime(date("Y-m-d H:i:s")) - strtotime($row2['queuecheckintime'])) / 60) ;
+                        $check_in_time = date("g:i a", strtotime($row2['queuecheckintime']));
                         $body .= <<<EOBODY
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{$priority}</td>
+                            <td>{$check_in_time}</td>
+                            <td>{$time_elapsed} min</td>
+                            <td>{$row2['firstname']} {$row2['lastname']}  </td>
                         </tr>
 EOBODY;
                     }
@@ -165,9 +206,9 @@ EOBODY;
 }
 
 if (isset($_POST["addToQueue"])) {
-    $query = sprintf("insert into tblqueue (uid, courseid, priority, queuecheckintime) values ('%s', '%s', '%s', '%s')", $_SESSION['uid'], $_POST['courseid'], 1, date("Y-m-d h:i:s"));
+    $query = sprintf("insert into tblqueue (uid, courseid, priority, queuecheckintime) values ('%s', '%s', '%s', '%s')", $_SESSION['uid'], $_POST['courseid'], 1, date("Y-m-d H:i:s"));
     $result = $db_connection->query($query);
-    //header("Location: main.php");
+    header("Location: main.php");
 }
 # Generating final page
 echo generatePage($body, $title);

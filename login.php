@@ -49,26 +49,11 @@ if (isset($_POST["submitLogin"])) {
 
             //if (password_verify($password, $row['password'])) {
             if ($password === $row['password']) {
-                $query = sprintf("select * from tblregistered where uid='%s'", $uid);
-
-                /* Executing query */
-                $result = $db_connection->query($query);
-                if (!$result) {
-                    die("Retrieval failed: ". $db_connection->error);
-                } else {
-                    /* Number of rows found */
-                    $num_rows = $result->num_rows;
-                    if ($num_rows === 0) {
-                        echo "No User Found!";
-                    } else {
-                        $result->data_seek(0);
-                        $row = $result->fetch_array(MYSQLI_ASSOC);
 
                         session_start();
                         $_SESSION['uid'] = $uid;
                         header("Location: classList.php");
-                    }
-                }
+
             } else {
                 echo "Password verification failed.<br>";
             }
