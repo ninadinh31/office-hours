@@ -26,7 +26,7 @@ function createTables($connection){
     $connection->query($query);
     $query = "create table tblregistered (uid varchar(8), usertype enum('TA', 'Student'), courseid int(2), primary key(uid, courseid))";
     $connection->query($query);
-    $query = "create table tbltas (uid varchar(8) primary key not null, picture varbinary(MAX)";
+    $query = "create table tbltas (uid varchar(8) primary key not null, pictureName varchar(30), docMimeType varchar(512), picture longblob)";
     $connection->query($query);
 
     // insert filler data - list of courses and test user
