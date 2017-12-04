@@ -22,9 +22,11 @@ function createTables($connection){
     $connection->query($query);
     $query = "create table tblqueue (uid varchar(8), courseid int(11), priority int(11), queuecheckintime datetime, tacheckintime datetime, primary key (uid, courseid))";
     $connection->query($query);
-    $query = "create table tblcourses (courseid int(2) primary key not null auto_increment, coursename varchar(50))";
+    $query = "create table tblcourses (courseid int(2) primary key not null auto_increment, coursename varchar(50), currenttaid varchar(8))";
     $connection->query($query);
     $query = "create table tblregistered (uid varchar(8), usertype enum('TA', 'Student'), courseid int(2), primary key(uid, courseid))";
+    $connection->query($query);
+    $query = "create table tbltas (uid varchar(8) primary key not null, picture varbinary(MAX)";
     $connection->query($query);
 
     // insert filler data - list of courses and test user
