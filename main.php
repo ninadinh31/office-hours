@@ -41,6 +41,7 @@ a:hover{
 
 
 </style>
+    <meta http-equiv="refresh" content="10"/>
 	<div class="jumbotron">
         <h3 style="display: inline-block; width: 60%;"><strong>$title</strong></h3>
         <a href="logout.php" class="nav"><h4>Logout</h4></a>
@@ -65,18 +66,41 @@ if (!$result) {
         $row = $result->fetch_array(MYSQLI_ASSOC);
         $body .= "<h3 class='subheader'><strong>TA</strong></h3>";
 
+
+
         // for each course that the user is a TA for...
         for ($row_index = 0; $row_index < $num_rows; $row_index++) {
             $result->data_seek($row_index);
             $row = $result->fetch_array(MYSQLI_ASSOC);
+
+            // get ta name
+            $queryGetTaName = sprintf("select * from tblcourses where courseid='%s'", $row['courseid']);
+            $resultGetTaName = $db_connection->query($queryGetTaName);
+            $resultGetTaName->data_seek(0);
+            $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
+
+            if ($rowGetTaName['currentta'] != "") {
+                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currentta']);
+                $resultGetTaName = $db_connection->query($queryGetTaName);
+                $resultGetTaName->data_seek(0);
+                $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
+                $firstname = $rowGetTaName['firstname'];
+                $lastname = $rowGetTaName['lastname'];
+            } else {
+                $firstname = "";
+                $lastname = "";
+            }
+
             $body .= <<<EOBODY
 
             <form action="{$_SERVER['PHP_SELF']}" method="post">
             <div class="form-group panel panel-default">
             <h4><strong>Course:</strong> {$row['coursename']}</h4>
-            <h4><strong>TA:</strong></h4>
+            <h4><strong>TA:</strong> {$firstname} {$lastname}</h4><br/>
+            <h4><strong>Current Student:</strong> </h4>
 
-                        <h4><strong>Queue:</strong></h4>
+            <br/>
+            <h4><strong>Queue:</strong></h4>
                 <table class="table table-hover table-striped" style="margin-right: 1.2em;">
                     <tr>
                         <th style="width: 10%;">Priority</th>
@@ -89,6 +113,8 @@ EOBODY;
             // show course queue
             $query2 = sprintf("select * from tblqueue join tblusers on tblqueue.uid = tblusers.uid where courseid='%s' order by tblqueue.queuecheckintime ASC", $row['courseid']);
             $result2 = $db_connection->query($query2);
+            $topPriorityUid = "";
+            $topPriorityCourseId = "";
 
             if (!$result2) {
                 die("Retrieval failed: one " . $db_connection->error);
@@ -99,6 +125,10 @@ EOBODY;
                     $row2 = $result2->fetch_array(MYSQLI_ASSOC);
 
                     for ($row_index2 = 0; $row_index2 < $num_rows2; $row_index2++) {
+                        if ($row_index2 === 0) {
+                            $topPriorityUid = $row2['uid'];
+                            $topPriorityCourseId = $row2['courseid'];
+                        }
                         $result2->data_seek($row_index2);
                         $row2 = $result2->fetch_array(MYSQLI_ASSOC);
                         $priority = $row_index2 + 1;
@@ -114,16 +144,21 @@ EOBODY;
 EOBODY;
                     }
                 }
-                $body .= <<<EOBODY
-                 </table ><br/>
+                $body .= "</table><br/><div id=\"taNav\">";
 
+                if ($row['currentta'] == "") {
+                    $body .= "<input type=\"submit\" name=\"startTaHours\" id=\"startTaHours\" class=\"btn btn-info\" value=\"Start TA Hours\" style=\"display: table; margin: 0 auto;\"/>";
+                } else {
+                    $body .= "<input type=\"submit\" name=\"endTaHours\" id=\"endTaHours\" class=\"btn btn-info\" value=\"End TA Hours\" style=\"display: table; margin: 0 auto;\"/>";
+                }
+                $body .= "</div> <input type=\"hidden\" name=\"courseid\" value=\"{$row['courseid']}\"/></form><div id=\"helpNext\">";
+                if ($row['currentta'] !== "") {
+                    $body .= "<br/><form action=\"{$_SERVER['PHP_SELF']}\" method=\"post\"><input type=\"submit\" name=\"helpNextBtn\" class=\"btn btn-info\" value=\"Help Next\" style=\"display: table; margin: 0 auto;\"/>";
+                    $body .= "<input type=\"hidden\" name=\"helpNextUid\" value=\"{$topPriorityUid}\"/><input type=\"hidden\" name=\"helpNextCourseId\" value=\"{$topPriorityCourseId}\"/></form>";
+                }
+                $body .= "</div></div>";
 
-<input type="submit" name="startTaHours" class="btn btn-info" value="Start TA Hours" style="display: table; margin: 0 auto;"/>
-</div>
-</form>
-EOBODY;
             }
-
         }
     }
 }
@@ -132,6 +167,8 @@ EOBODY;
 $query = sprintf("select * from tblregistered join tblcourses on tblregistered.courseid = tblcourses.courseid where uid='%s' and usertype='%s' order by tblcourses.coursename ASC", $_SESSION['uid'], "Student");
 $result = $db_connection->query($query);
 
+
+
 if (!$result) {
     die("Retrieval failed: three ". $db_connection->error);
 } else {
@@ -139,18 +176,38 @@ if (!$result) {
     if ($num_rows > 0) {
         $result->data_seek(0);
         $row = $result->fetch_array(MYSQLI_ASSOC);
+
         $body .= "<br/><br/><h3 class='subheader'><strong>Student</strong></h3>";
 
         // for each course that the user is a student for...
         for ($row_index = 0; $row_index < $num_rows; $row_index++) {
             $result->data_seek($row_index);
             $row = $result->fetch_array(MYSQLI_ASSOC);
+
+            // get ta name
+            $queryGetTaName = sprintf("select * from tblcourses where courseid='%s'", $row['courseid']);
+            $resultGetTaName = $db_connection->query($queryGetTaName);
+            $resultGetTaName->data_seek(0);
+            $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
+
+            if ($rowGetTaName['currentta'] != "") {
+                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currentta']);
+                $resultGetTaName = $db_connection->query($queryGetTaName);
+                $resultGetTaName->data_seek(0);
+                $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
+                $firstname = $rowGetTaName['firstname'];
+                $lastname = $rowGetTaName['lastname'];
+            } else {
+                $firstname = "";
+                $lastname = "";
+            }
+
             $body .= <<<EOBODY
 
             <form action="{$_SERVER['PHP_SELF']}" method="post">
             <div class="form-group panel panel-default">
             <h4><strong>Course:</strong> {$row['coursename']}</h4>
-            <h4><strong>TA:</strong></h4>
+            <h4><strong>TA:</strong> {$firstname} {$lastname}</h4><br/>
 
             <h4><strong>Queue:</strong></h4>
                 <table class="table table-hover table-striped" style="margin-right: 1.2em;">
@@ -198,6 +255,7 @@ EOBODY;
             
         </form><br/>
 </div>
+
 EOBODY;
             }
         }
@@ -209,6 +267,42 @@ if (isset($_POST["addToQueue"])) {
     $result = $db_connection->query($query);
     header("Location: main.php");
 }
+
+if (isset($_POST["startTaHours"])) {
+
+    $query = sprintf("update tblcourses set currentta='%s' where courseid='%s'", $_SESSION['uid'], $_POST['courseid']);
+    $result = $db_connection->query($query);
+    header("Location: main.php");
+}
+
+if (isset($_POST["endTaHours"])) {
+
+    $query = sprintf("update tblcourses set currentta='' where courseid='%s'", $_POST['courseid']);
+    $result = $db_connection->query($query);
+    header("Location: main.php");
+}
+if (isset($_POST["helpNextBtn"])) {
+echo ($_POST['helpNextUid']);
+    $query = sprintf("select * from tblusers join tblqueue on tblusers.uid = tblqueue.uid where tblusers.uid='%s'", $_POST['helpNextUid']);
+    $result = $db_connection->query($query);
+    if (!$result) {
+        die("Retrieval failed: " . $db_connection->error);
+    } else {
+        $num_rows = $result->num_rows;
+        if ($num_rows === 0) {
+            echo "Empty Table<br>";
+        } else {
+            $result->data_seek(0);
+            $row = $result->fetch_array(MYSQLI_ASSOC);
+            $query2 = sprintf("update tblqueue set tacheckintime='%s' where uid='%s' and courseid='%s'", date("Y-m-d H:i:s"), $_POST['helpNextUid'], $_POST['helpNextCourseId']);
+            $result2 = $db_connection->query($query2);
+
+        }
+    }
+
+    //header("Location: main.php");
+}
+
 # Generating final page
 echo generatePage($body, $title);
 ?>
