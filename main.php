@@ -95,10 +95,12 @@ if (!$result) {
                 $rowGetTaPic = $resultGetTaPic->fetch_array(MYSQLI_ASSOC);
                 $TAPicture =*/
             } else {
-                $firstname = "";
+                $firstname = "Currently None";
                 $lastname = "";
                 $TAPicture="";
             }
+
+            $currStudId = "currStud" . $row['courseid'];
 
             $body .= <<<EOBODY
 
@@ -107,9 +109,9 @@ if (!$result) {
             <h4><strong>Course:</strong> {$row['coursename']}</h4>
             <h4><strong>TA:</strong> {$firstname} {$lastname}</h4><br/>
             <img src="$TAPicture" height="100px">
-            <h4><strong>Current Student:</strong> </h4>
 
             <br/>
+
             <h4><strong>Queue:</strong></h4>
                 <table class="table table-hover table-striped" style="margin-right: 1.2em;">
                     <tr>
@@ -208,7 +210,7 @@ if (!$result) {
                 $firstname = $rowGetTaName['firstname'];
                 $lastname = $rowGetTaName['lastname'];
             } else {
-                $firstname = "";
+                $firstname = "Currently None";
                 $lastname = "";
             }
 
@@ -304,13 +306,13 @@ echo ($_POST['helpNextUid']);
         } else {
             $result->data_seek(0);
             $row = $result->fetch_array(MYSQLI_ASSOC);
-            $query2 = sprintf("update tblqueue set tacheckintime='%s' where uid='%s' and courseid='%s'", date("Y-m-d H:i:s"), $_POST['helpNextUid'], $_POST['helpNextCourseId']);
+            $query2 = sprintf("delete from tblqueue where uid='%s' and courseid='%s'", $_POST['helpNextUid'], $_POST['helpNextCourseId']);
             $result2 = $db_connection->query($query2);
-
+            
         }
     }
 
-    //header("Location: main.php");
+    header("Location: main.php");
 }
 
 # Generating final page
