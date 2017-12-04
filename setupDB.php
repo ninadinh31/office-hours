@@ -34,6 +34,11 @@ function createTables($connection){
     $connection->query($query);
     $query = "insert into tblusers (firstname, lastname, uid, email, password) values ('testfirst', 'testlast', '1234', 'email@gmail.com', '1234')";
     $connection->query($query);
+
+    $fileData = addslashes(file_get_contents("kfoster5.jpg"));
+    $sqlQuery = "insert into tbltas values ('kfoster5.jpg', 'image/jpeg', $fileData)";
+    //$sqlQuery .= "('kfoster5.jpg', 'image/jpeg', '{$fileData}')";
+    $result = mysqli_query($connection, $sqlQuery);
 }
 
 ?>

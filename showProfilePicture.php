@@ -1,17 +1,17 @@
 <?php
 
     require_once("support.php");
-    $dbconnection = connectToDB($host, $user, $password, $database);
+    $dbconnection = initDBConnection($host, $user, $dbpassword, $database);
     $fileToRetrieve = $_POST['ta_name'].".jpg";
 
-    $sqlQuery = "select docData, docMimeType from tbltas where docName = '{$fileToRetrieve}'";
+    $sqlQuery = "select picture, docMimeType from tbltas where pictureName = '{$fileToRetrieve}'";
     $result = mysqli_query($db, $sqlQuery);
     if ($result) {
         $recordArray = mysqli_fetch_assoc($result);
         header("Content-type: "."{$recordArray['docMimeType']}");
-        echo $recordArray['docData'];
+        echo $recordArray['picture'];
         mysqli_free_result($result);
-    } else { 				   
+    } else {
         $body = "<h3>Failed to retrieve document $fileToRetrieve: ".mysqli_error($db)." </h3>";
     }
 
