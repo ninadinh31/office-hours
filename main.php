@@ -109,6 +109,10 @@ if (!$result) {
             <h4><strong>Course:</strong> {$row['coursename']}</h4>
             <h4><strong>TA:</strong> {$firstname} {$lastname}</h4><br/>
             <img src="$TAPicture" height="100px">
+            <form action="showProfilePicture.php" method="post">
+                <input type="hidden" name="ta_name" value="$taName">
+                <input type="submit" id="submit" name="submit" class="btn btn-info" value="Click to See Enlarged Picture" style="display: table; margin: 0 auto;">
+            </form>
 
             <br/>
 
