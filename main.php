@@ -41,6 +41,7 @@ a:hover{
 
 
 </style>
+
     <!-- <meta http-equiv="refresh" content="10"/> -->
 	<div class="jumbotron">
         <h3 style="display: inline-block; width: 60%;"><strong>$title</strong></h3>
@@ -80,7 +81,7 @@ if (!$result) {
             $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
 
             if ($rowGetTaName['currenttaid'] != "") {
-                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currentta']);
+                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currenttaid']);
                 $resultGetTaName = $db_connection->query($queryGetTaName);
                 $resultGetTaName->data_seek(0);
                 $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
@@ -191,7 +192,7 @@ if (!$result) {
             $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
 
             if ($rowGetTaName['currenttaid'] != "") {
-                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currentta']);
+                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currenttaid']);
                 $resultGetTaName = $db_connection->query($queryGetTaName);
                 $resultGetTaName->data_seek(0);
                 $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
@@ -270,14 +271,14 @@ if (isset($_POST["addToQueue"])) {
 
 if (isset($_POST["startTaHours"])) {
 
-    $query = sprintf("update tblcourses set currentta='%s' where courseid='%s'", $_SESSION['uid'], $_POST['courseid']);
+    $query = sprintf("update tblcourses set currenttaid='%s' where courseid='%s'", $_SESSION['uid'], $_POST['courseid']);
     $result = $db_connection->query($query);
     header("Location: main.php");
 }
 
 if (isset($_POST["endTaHours"])) {
 
-    $query = sprintf("update tblcourses set currentta='' where courseid='%s'", $_POST['courseid']);
+    $query = sprintf("update tblcourses set currenttaid='' where courseid='%s'", $_POST['courseid']);
     $result = $db_connection->query($query);
     header("Location: main.php");
 }
