@@ -3,6 +3,10 @@ require_once("support.php");
 require_once("dbLogin.php");
 require_once("setupDB.php");
 
+$db_connection = initDBConnection($host, $user, $dbpassword, $database);
+createDatabase($db_connection);
+createTables($db_connection);
+
 $title = "TA Office Hours Login";
 $topPart = <<<EOBODY
 <style>

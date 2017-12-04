@@ -41,7 +41,7 @@ a:hover{
 
 
 </style>
-    <meta http-equiv="refresh" content="10"/>
+    <!-- <meta http-equiv="refresh" content="10"/> -->
 	<div class="jumbotron">
         <h3 style="display: inline-block; width: 60%;"><strong>$title</strong></h3>
         <a href="logout.php" class="nav"><h4>Logout</h4></a>
@@ -79,7 +79,7 @@ if (!$result) {
             $resultGetTaName->data_seek(0);
             $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
 
-            if ($rowGetTaName['currentta'] != "") {
+            if ($rowGetTaName['currenttaid'] != "") {
                 $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currentta']);
                 $resultGetTaName = $db_connection->query($queryGetTaName);
                 $resultGetTaName->data_seek(0);
@@ -146,13 +146,13 @@ EOBODY;
                 }
                 $body .= "</table><br/><div id=\"taNav\">";
 
-                if ($row['currentta'] == "") {
+                if ($row['currenttaid'] == "") {
                     $body .= "<input type=\"submit\" name=\"startTaHours\" id=\"startTaHours\" class=\"btn btn-info\" value=\"Start TA Hours\" style=\"display: table; margin: 0 auto;\"/>";
                 } else {
                     $body .= "<input type=\"submit\" name=\"endTaHours\" id=\"endTaHours\" class=\"btn btn-info\" value=\"End TA Hours\" style=\"display: table; margin: 0 auto;\"/>";
                 }
                 $body .= "</div> <input type=\"hidden\" name=\"courseid\" value=\"{$row['courseid']}\"/></form><div id=\"helpNext\">";
-                if ($row['currentta'] !== "") {
+                if ($row['currenttaid'] !== "") {
                     $body .= "<br/><form action=\"{$_SERVER['PHP_SELF']}\" method=\"post\"><input type=\"submit\" name=\"helpNextBtn\" class=\"btn btn-info\" value=\"Help Next\" style=\"display: table; margin: 0 auto;\"/>";
                     $body .= "<input type=\"hidden\" name=\"helpNextUid\" value=\"{$topPriorityUid}\"/><input type=\"hidden\" name=\"helpNextCourseId\" value=\"{$topPriorityCourseId}\"/></form>";
                 }
@@ -190,7 +190,7 @@ if (!$result) {
             $resultGetTaName->data_seek(0);
             $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
 
-            if ($rowGetTaName['currentta'] != "") {
+            if ($rowGetTaName['currenttaid'] != "") {
                 $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currentta']);
                 $resultGetTaName = $db_connection->query($queryGetTaName);
                 $resultGetTaName->data_seek(0);
