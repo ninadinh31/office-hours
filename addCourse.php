@@ -31,7 +31,7 @@ if (!$result) {
                     || $_POST['selectUserType'] == 'TA' || $_POST['selectUserType'] == 'ta') {
                 header("Location: addPicture.html");
             } else {
-                header("Location: courseList.php");
+                header("Location: classList.php");
             }
         }
     }
