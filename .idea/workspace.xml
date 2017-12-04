@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05873aa2-4fa4-4af7-ba8d-0a7437823cbd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pics/testudo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addPicture.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pictureUpload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addCourse.php" afterPath="$PROJECT_DIR$/addCourse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addPicture.html" afterPath="$PROJECT_DIR$/addPicture.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pictureUpload.php" afterPath="$PROJECT_DIR$/pictureUpload.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,55 +19,54 @@
         <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1002">
-              <caret line="292" column="23" lean-forward="false" selection-start-line="292" selection-start-column="18" selection-end-line="292" selection-end-column="23" />
+              <caret line="305" column="23" lean-forward="false" selection-start-line="305" selection-start-column="18" selection-end-line="305" selection-end-column="23" />
               <folding>
-                <marker date="1512391367258" expanded="true" signature="176:684" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="189:282" ph="{...}" />
-                <marker date="1512391367258" expanded="true" signature="290:329" ph="{...}" />
-                <marker date="1512391367258" expanded="true" signature="335:488" ph="{...}" />
-                <marker date="1512391367258" expanded="true" signature="496:526" ph="{...}" />
-                <marker date="1512391367258" expanded="true" signature="540:621" ph="{...}" />
-                <marker date="1512391367258" expanded="true" signature="633:674" ph="{...}" />
-                <marker date="1512391367258" expanded="true" signature="765:991" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="786:820" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
-                <marker date="1512391367258" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
-                <marker date="1512391367258" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
-                <marker date="1512391367258" expanded="true" signature="3457:3646" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="3792:4064" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="4010:4041" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="4254:4274" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="4275:4576" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="4300:4576" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="4337:4348" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="4399:4410" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="4466:4477" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="4529:4540" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="4651:4777" ph="select * fro... tblqueue" />
-                <marker date="1512391367258" expanded="true" signature="6005:6275" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="6642:6673" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="6850:6881" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="7277:7308" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="7638:7797" ph="select * fro... tblregistered" />
-                <marker date="1512391367258" expanded="true" signature="8481:8525" ph="select * fro... tblcourses" />
-                <marker date="1512391367258" expanded="true" signature="8833:8870" ph="select * fro... tblusers" />
-                <marker date="1512391367258" expanded="true" signature="9426:10062" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="9483:10062" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="9740:9760" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="9761:10062" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="9786:10062" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="9823:9834" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="9885:9896" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="9952:9963" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="10015:10026" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="10137:10263" ph="select * fro... tblqueue" />
-                <marker date="1512391367258" expanded="true" signature="11215:11485" ph="..." />
-                <marker date="1512391367258" expanded="false" signature="11708:11739" ph="..." />
-                <marker date="1512391367258" expanded="true" signature="11966:12062" ph="insert into tblqueue... " />
-                <marker date="1512391367258" expanded="true" signature="12270:12328" ph="update tblco... " />
-                <marker date="1512391367258" expanded="true" signature="12510:12566" ph="update tblco... " />
-                <marker date="1512391367258" expanded="true" signature="12759:12850" ph="select * fro... tblusers" />
-                <marker date="1512391367258" expanded="true" signature="13258:13311" ph="delete from " />
+                <marker date="1512407841991" expanded="true" signature="176:684" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="189:282" ph="{...}" />
+                <marker date="1512407841991" expanded="true" signature="290:329" ph="{...}" />
+                <marker date="1512407841991" expanded="true" signature="335:488" ph="{...}" />
+                <marker date="1512407841991" expanded="true" signature="496:526" ph="{...}" />
+                <marker date="1512407841991" expanded="true" signature="540:621" ph="{...}" />
+                <marker date="1512407841991" expanded="true" signature="633:674" ph="{...}" />
+                <marker date="1512407841991" expanded="true" signature="765:991" ph="..." />
+                <marker date="1512407841991" expanded="false" signature="786:820" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
+                <marker date="1512407841991" expanded="true" signature="1398:1457" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="1465:3598" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="1525:3598" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="1802:3598" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
+                <marker date="1512407841991" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
+                <marker date="1512407841991" expanded="true" signature="3457:3598" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="10116:10554" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="10116:10556" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="10116:12390" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="10116:12396" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="10116:12398" ph="..." />
+                <marker date="1512407841991" expanded="false" signature="10232:10252" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="10253:10554" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="10278:10554" ph="..." />
+                <marker date="1512407841991" expanded="false" signature="10315:10326" ph="..." />
+                <marker date="1512407841991" expanded="false" signature="10377:10388" ph="..." />
+                <marker date="1512407841991" expanded="false" signature="10444:10455" ph="..." />
+                <marker date="1512407841991" expanded="false" signature="10507:10518" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="10629:10755" ph="select * fro... tblqueue" />
+                <marker date="1512407841991" expanded="true" signature="10861:10946" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="10954:12380" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="11041:12025" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="11236:12007" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="11679:11979" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="11707:11977" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="12061:12360" ph="..." />
+                <marker date="1512407841991" expanded="false" signature="12200:12231" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="12435:12699" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="12458:12554" ph="insert into tblqueue... " />
+                <marker date="1512407841991" expanded="true" signature="12738:12941" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="12762:12820" ph="update tblco... " />
+                <marker date="1512407841991" expanded="true" signature="12978:13161" ph="..." />
+                <marker date="1512407841991" expanded="true" signature="13002:13058" ph="update tblco... " />
+                <marker date="1512407841991" expanded="true" signature="13251:13342" ph="select * fro... tblusers" />
+                <marker date="1512407841991" expanded="true" signature="13750:13803" ph="delete from " />
               </folding>
             </state>
           </provider>
@@ -91,8 +88,8 @@
       <file leaf-file-name="addPicture.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addPicture.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="198">
+              <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -101,11 +98,9 @@
       <file leaf-file-name="pictureUpload.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pictureUpload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-              <folding>
-                <marker date="1512407787915" expanded="true" signature="419:531" ph="insert into tbltas... " />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,18 +139,18 @@
       <file leaf-file-name="setupDB.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setupDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding>
-                <marker date="1512402884729" expanded="true" signature="71:77" ph="..." />
-                <marker date="1512402884729" expanded="true" signature="648:794" ph="create table... tblusers" />
-                <marker date="1512402884729" expanded="true" signature="843:997" ph="create table... tblqueue" />
-                <marker date="1512402884729" expanded="true" signature="1046:1171" ph="create table... tblcourses" />
-                <marker date="1512402884729" expanded="true" signature="1220:1340" ph="create table... tblregistered" />
-                <marker date="1512402884729" expanded="true" signature="1389:1515" ph="create table... tbltas" />
-                <marker date="1512402884729" expanded="true" signature="1623:1782" ph="insert into tblcourses... " />
-                <marker date="1512402884729" expanded="true" signature="1831:1963" ph="insert into tblusers... " />
-                <marker date="1512402884729" expanded="true" signature="2165:2226" ph="insert into ${$table}... " />
+                <marker date="1512409775338" expanded="true" signature="71:77" ph="..." />
+                <marker date="1512409775338" expanded="true" signature="649:795" ph="create table... tblusers" />
+                <marker date="1512409775338" expanded="true" signature="844:998" ph="create table... tblqueue" />
+                <marker date="1512409775338" expanded="true" signature="1047:1172" ph="create table... tblcourses" />
+                <marker date="1512409775338" expanded="true" signature="1221:1341" ph="create table... tblregistered" />
+                <marker date="1512409775338" expanded="true" signature="1390:1516" ph="create table... tbltas" />
+                <marker date="1512409775338" expanded="true" signature="1624:1783" ph="insert into tblcourses... " />
+                <marker date="1512409775338" expanded="true" signature="1832:1964" ph="insert into tblusers... " />
+                <marker date="1512409775338" expanded="true" signature="2166:2227" ph="insert into tbltas... " />
               </folding>
             </state>
           </provider>
@@ -194,11 +189,11 @@
       <list>
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/main.php" />
-        <option value="$PROJECT_DIR$/setupDB.php" />
         <option value="$PROJECT_DIR$/addCourse.php" />
         <option value="$PROJECT_DIR$/addPhoto.php" />
         <option value="$PROJECT_DIR$/addPhoto.html" />
         <option value="$PROJECT_DIR$/addPicture.html" />
+        <option value="$PROJECT_DIR$/setupDB.php" />
         <option value="$PROJECT_DIR$/pictureUpload.php" />
       </list>
     </option>
@@ -218,10 +213,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="828" />
-    <option name="y" value="-4" />
-    <option name="width" value="1092" />
-    <option name="height" value="1084" />
+    <option name="x" value="480" />
+    <option name="y" value="434" />
+    <option name="width" value="1090" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -301,15 +296,15 @@
       <workItem from="1512390939339" duration="707000" />
       <workItem from="1512391657598" duration="168000" />
       <workItem from="1512392090218" duration="1290000" />
-      <workItem from="1512401400724" duration="6412000" />
+      <workItem from="1512401400724" duration="8890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11895000" />
+    <option name="totallyTimeSpent" value="14373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="828" y="-4" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -343,22 +338,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dbLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -387,15 +366,15 @@
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <marker date="1512402884729" expanded="true" signature="71:77" ph="..." />
-            <marker date="1512402884729" expanded="true" signature="648:794" ph="create table... tblusers" />
-            <marker date="1512402884729" expanded="true" signature="843:997" ph="create table... tblqueue" />
-            <marker date="1512402884729" expanded="true" signature="1046:1171" ph="create table... tblcourses" />
-            <marker date="1512402884729" expanded="true" signature="1220:1340" ph="create table... tblregistered" />
-            <marker date="1512402884729" expanded="true" signature="1389:1515" ph="create table... tbltas" />
-            <marker date="1512402884729" expanded="true" signature="1623:1782" ph="insert into tblcourses... " />
-            <marker date="1512402884729" expanded="true" signature="1831:1963" ph="insert into tblusers... " />
-            <marker date="1512402884729" expanded="true" signature="2165:2226" ph="insert into ${$table}... " />
+            <marker date="1512409775338" expanded="true" signature="71:77" ph="..." />
+            <marker date="1512409775338" expanded="true" signature="649:795" ph="create table... tblusers" />
+            <marker date="1512409775338" expanded="true" signature="844:998" ph="create table... tblqueue" />
+            <marker date="1512409775338" expanded="true" signature="1047:1172" ph="create table... tblcourses" />
+            <marker date="1512409775338" expanded="true" signature="1221:1341" ph="create table... tblregistered" />
+            <marker date="1512409775338" expanded="true" signature="1390:1516" ph="create table... tbltas" />
+            <marker date="1512409775338" expanded="true" signature="1624:1783" ph="insert into tblcourses... " />
+            <marker date="1512409775338" expanded="true" signature="1832:1964" ph="insert into tblusers... " />
+            <marker date="1512409775338" expanded="true" signature="2166:2227" ph="insert into tbltas... " />
           </folding>
         </state>
       </provider>
@@ -416,53 +395,52 @@
         <state relative-caret-position="936">
           <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <marker date="1512391367258" expanded="true" signature="176:684" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="189:282" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="290:329" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="335:488" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="496:526" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="540:621" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="633:674" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="765:991" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="786:820" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
-            <marker date="1512391367258" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
-            <marker date="1512391367258" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="3457:3646" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="3792:4064" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4010:4041" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4254:4274" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4275:4576" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4300:4576" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4337:4348" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4399:4410" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4466:4477" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4529:4540" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4651:4777" ph="select * fro... tblqueue" />
-            <marker date="1512391367258" expanded="true" signature="6005:6275" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="6642:6673" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="6850:6881" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="7277:7308" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="7638:7797" ph="select * fro... tblregistered" />
-            <marker date="1512391367258" expanded="true" signature="8481:8525" ph="select * fro... tblcourses" />
-            <marker date="1512391367258" expanded="true" signature="8833:8870" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="9426:10062" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9483:10062" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9740:9760" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9761:10062" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9786:10062" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9823:9834" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9885:9896" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9952:9963" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="10015:10026" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="10137:10263" ph="select * fro... tblqueue" />
-            <marker date="1512391367258" expanded="true" signature="11215:11485" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="11708:11739" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="11966:12062" ph="insert into tblqueue... " />
-            <marker date="1512391367258" expanded="true" signature="12270:12328" ph="update tblco... " />
-            <marker date="1512391367258" expanded="true" signature="12510:12566" ph="update tblco... " />
-            <marker date="1512391367258" expanded="true" signature="12759:12850" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="13258:13311" ph="delete from " />
+            <marker date="1512407841991" expanded="true" signature="176:684" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="189:282" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="290:329" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="335:488" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="496:526" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="540:621" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="633:674" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="765:991" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="786:820" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
+            <marker date="1512407841991" expanded="true" signature="1398:1457" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1465:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1525:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1802:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
+            <marker date="1512407841991" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
+            <marker date="1512407841991" expanded="true" signature="3457:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:10554" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:10556" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12390" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12396" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12398" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10232:10252" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10253:10554" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10278:10554" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10315:10326" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10377:10388" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10444:10455" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10507:10518" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10629:10755" ph="select * fro... tblqueue" />
+            <marker date="1512407841991" expanded="true" signature="10861:10946" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10954:12380" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11041:12025" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11236:12007" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11679:11979" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11707:11977" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12061:12360" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="12200:12231" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12435:12699" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12458:12554" ph="insert into tblqueue... " />
+            <marker date="1512407841991" expanded="true" signature="12738:12941" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12762:12820" ph="update tblco... " />
+            <marker date="1512407841991" expanded="true" signature="12978:13161" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="13002:13058" ph="update tblco... " />
+            <marker date="1512407841991" expanded="true" signature="13251:13342" ph="select * fro... tblusers" />
+            <marker date="1512407841991" expanded="true" signature="13750:13803" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -489,53 +467,52 @@
         <state relative-caret-position="288">
           <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
-            <marker date="1512391367258" expanded="true" signature="176:684" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="189:282" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="290:329" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="335:488" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="496:526" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="540:621" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="633:674" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="765:991" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="786:820" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
-            <marker date="1512391367258" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
-            <marker date="1512391367258" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="3457:3646" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="3792:4064" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4010:4041" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4254:4274" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4275:4576" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4300:4576" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4337:4348" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4399:4410" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4466:4477" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4529:4540" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4651:4777" ph="select * fro... tblqueue" />
-            <marker date="1512391367258" expanded="true" signature="6005:6275" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="6642:6673" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="6850:6881" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="7277:7308" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="7638:7797" ph="select * fro... tblregistered" />
-            <marker date="1512391367258" expanded="true" signature="8481:8525" ph="select * fro... tblcourses" />
-            <marker date="1512391367258" expanded="true" signature="8833:8870" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="9426:10062" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9483:10062" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9740:9760" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9761:10062" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9786:10062" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9823:9834" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9885:9896" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9952:9963" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="10015:10026" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="10137:10263" ph="select * fro... tblqueue" />
-            <marker date="1512391367258" expanded="true" signature="11215:11485" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="11708:11739" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="11966:12062" ph="insert into tblqueue... " />
-            <marker date="1512391367258" expanded="true" signature="12270:12328" ph="update tblco... " />
-            <marker date="1512391367258" expanded="true" signature="12510:12566" ph="update tblco... " />
-            <marker date="1512391367258" expanded="true" signature="12759:12850" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="13258:13311" ph="delete from " />
+            <marker date="1512407841991" expanded="true" signature="176:684" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="189:282" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="290:329" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="335:488" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="496:526" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="540:621" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="633:674" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="765:991" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="786:820" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
+            <marker date="1512407841991" expanded="true" signature="1398:1457" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1465:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1525:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1802:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
+            <marker date="1512407841991" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
+            <marker date="1512407841991" expanded="true" signature="3457:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:10554" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:10556" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12390" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12396" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12398" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10232:10252" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10253:10554" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10278:10554" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10315:10326" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10377:10388" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10444:10455" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10507:10518" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10629:10755" ph="select * fro... tblqueue" />
+            <marker date="1512407841991" expanded="true" signature="10861:10946" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10954:12380" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11041:12025" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11236:12007" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11679:11979" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11707:11977" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12061:12360" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="12200:12231" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12435:12699" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12458:12554" ph="insert into tblqueue... " />
+            <marker date="1512407841991" expanded="true" signature="12738:12941" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12762:12820" ph="update tblco... " />
+            <marker date="1512407841991" expanded="true" signature="12978:13161" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="13002:13058" ph="update tblco... " />
+            <marker date="1512407841991" expanded="true" signature="13251:13342" ph="select * fro... tblusers" />
+            <marker date="1512407841991" expanded="true" signature="13750:13803" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -624,15 +601,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512402884729" expanded="true" signature="71:77" ph="..." />
-            <marker date="1512402884729" expanded="true" signature="648:794" ph="create table... tblusers" />
-            <marker date="1512402884729" expanded="true" signature="843:997" ph="create table... tblqueue" />
-            <marker date="1512402884729" expanded="true" signature="1046:1171" ph="create table... tblcourses" />
-            <marker date="1512402884729" expanded="true" signature="1220:1340" ph="create table... tblregistered" />
-            <marker date="1512402884729" expanded="true" signature="1389:1515" ph="create table... tbltas" />
-            <marker date="1512402884729" expanded="true" signature="1623:1782" ph="insert into tblcourses... " />
-            <marker date="1512402884729" expanded="true" signature="1831:1963" ph="insert into tblusers... " />
-            <marker date="1512402884729" expanded="true" signature="2165:2226" ph="insert into ${$table}... " />
+            <marker date="1512409775338" expanded="true" signature="71:77" ph="..." />
+            <marker date="1512409775338" expanded="true" signature="649:795" ph="create table... tblusers" />
+            <marker date="1512409775338" expanded="true" signature="844:998" ph="create table... tblqueue" />
+            <marker date="1512409775338" expanded="true" signature="1047:1172" ph="create table... tblcourses" />
+            <marker date="1512409775338" expanded="true" signature="1221:1341" ph="create table... tblregistered" />
+            <marker date="1512409775338" expanded="true" signature="1390:1516" ph="create table... tbltas" />
+            <marker date="1512409775338" expanded="true" signature="1624:1783" ph="insert into tblcourses... " />
+            <marker date="1512409775338" expanded="true" signature="1832:1964" ph="insert into tblusers... " />
+            <marker date="1512409775338" expanded="true" signature="2166:2227" ph="insert into tbltas... " />
           </folding>
         </state>
       </provider>
@@ -670,53 +647,52 @@
         <state relative-caret-position="288">
           <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
-            <marker date="1512391367258" expanded="true" signature="176:684" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="189:282" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="290:329" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="335:488" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="496:526" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="540:621" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="633:674" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="765:991" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="786:820" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
-            <marker date="1512391367258" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
-            <marker date="1512391367258" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="3457:3646" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="3792:4064" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4010:4041" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4254:4274" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4275:4576" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4300:4576" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4337:4348" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4399:4410" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4466:4477" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4529:4540" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4651:4777" ph="select * fro... tblqueue" />
-            <marker date="1512391367258" expanded="true" signature="6005:6275" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="6642:6673" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="6850:6881" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="7277:7308" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="7638:7797" ph="select * fro... tblregistered" />
-            <marker date="1512391367258" expanded="true" signature="8481:8525" ph="select * fro... tblcourses" />
-            <marker date="1512391367258" expanded="true" signature="8833:8870" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="9426:10062" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9483:10062" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9740:9760" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9761:10062" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9786:10062" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9823:9834" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9885:9896" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9952:9963" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="10015:10026" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="10137:10263" ph="select * fro... tblqueue" />
-            <marker date="1512391367258" expanded="true" signature="11215:11485" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="11708:11739" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="11966:12062" ph="insert into tblqueue... " />
-            <marker date="1512391367258" expanded="true" signature="12270:12328" ph="update tblco... " />
-            <marker date="1512391367258" expanded="true" signature="12510:12566" ph="update tblco... " />
-            <marker date="1512391367258" expanded="true" signature="12759:12850" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="13258:13311" ph="delete from " />
+            <marker date="1512407841991" expanded="true" signature="176:684" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="189:282" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="290:329" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="335:488" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="496:526" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="540:621" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="633:674" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="765:991" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="786:820" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
+            <marker date="1512407841991" expanded="true" signature="1398:1457" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1465:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1525:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1802:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
+            <marker date="1512407841991" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
+            <marker date="1512407841991" expanded="true" signature="3457:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:10554" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:10556" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12390" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12396" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12398" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10232:10252" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10253:10554" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10278:10554" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10315:10326" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10377:10388" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10444:10455" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10507:10518" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10629:10755" ph="select * fro... tblqueue" />
+            <marker date="1512407841991" expanded="true" signature="10861:10946" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10954:12380" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11041:12025" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11236:12007" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11679:11979" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11707:11977" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12061:12360" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="12200:12231" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12435:12699" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12458:12554" ph="insert into tblqueue... " />
+            <marker date="1512407841991" expanded="true" signature="12738:12941" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12762:12820" ph="update tblco... " />
+            <marker date="1512407841991" expanded="true" signature="12978:13161" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="13002:13058" ph="update tblco... " />
+            <marker date="1512407841991" expanded="true" signature="13251:13342" ph="select * fro... tblusers" />
+            <marker date="1512407841991" expanded="true" signature="13750:13803" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -805,15 +781,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512402884729" expanded="true" signature="71:77" ph="..." />
-            <marker date="1512402884729" expanded="true" signature="648:794" ph="create table... tblusers" />
-            <marker date="1512402884729" expanded="true" signature="843:997" ph="create table... tblqueue" />
-            <marker date="1512402884729" expanded="true" signature="1046:1171" ph="create table... tblcourses" />
-            <marker date="1512402884729" expanded="true" signature="1220:1340" ph="create table... tblregistered" />
-            <marker date="1512402884729" expanded="true" signature="1389:1515" ph="create table... tbltas" />
-            <marker date="1512402884729" expanded="true" signature="1623:1782" ph="insert into tblcourses... " />
-            <marker date="1512402884729" expanded="true" signature="1831:1963" ph="insert into tblusers... " />
-            <marker date="1512402884729" expanded="true" signature="2165:2226" ph="insert into ${$table}... " />
+            <marker date="1512409775338" expanded="true" signature="71:77" ph="..." />
+            <marker date="1512409775338" expanded="true" signature="649:795" ph="create table... tblusers" />
+            <marker date="1512409775338" expanded="true" signature="844:998" ph="create table... tblqueue" />
+            <marker date="1512409775338" expanded="true" signature="1047:1172" ph="create table... tblcourses" />
+            <marker date="1512409775338" expanded="true" signature="1221:1341" ph="create table... tblregistered" />
+            <marker date="1512409775338" expanded="true" signature="1390:1516" ph="create table... tbltas" />
+            <marker date="1512409775338" expanded="true" signature="1624:1783" ph="insert into tblcourses... " />
+            <marker date="1512409775338" expanded="true" signature="1832:1964" ph="insert into tblusers... " />
+            <marker date="1512409775338" expanded="true" signature="2166:2227" ph="insert into tbltas... " />
           </folding>
         </state>
       </provider>
@@ -906,15 +882,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512402884729" expanded="true" signature="71:77" ph="..." />
-            <marker date="1512402884729" expanded="true" signature="648:794" ph="create table... tblusers" />
-            <marker date="1512402884729" expanded="true" signature="843:997" ph="create table... tblqueue" />
-            <marker date="1512402884729" expanded="true" signature="1046:1171" ph="create table... tblcourses" />
-            <marker date="1512402884729" expanded="true" signature="1220:1340" ph="create table... tblregistered" />
-            <marker date="1512402884729" expanded="true" signature="1389:1515" ph="create table... tbltas" />
-            <marker date="1512402884729" expanded="true" signature="1623:1782" ph="insert into tblcourses... " />
-            <marker date="1512402884729" expanded="true" signature="1831:1963" ph="insert into tblusers... " />
-            <marker date="1512402884729" expanded="true" signature="2165:2226" ph="insert into ${$table}... " />
+            <marker date="1512409775338" expanded="true" signature="71:77" ph="..." />
+            <marker date="1512409775338" expanded="true" signature="649:795" ph="create table... tblusers" />
+            <marker date="1512409775338" expanded="true" signature="844:998" ph="create table... tblqueue" />
+            <marker date="1512409775338" expanded="true" signature="1047:1172" ph="create table... tblcourses" />
+            <marker date="1512409775338" expanded="true" signature="1221:1341" ph="create table... tblregistered" />
+            <marker date="1512409775338" expanded="true" signature="1390:1516" ph="create table... tbltas" />
+            <marker date="1512409775338" expanded="true" signature="1624:1783" ph="insert into tblcourses... " />
+            <marker date="1512409775338" expanded="true" signature="1832:1964" ph="insert into tblusers... " />
+            <marker date="1512409775338" expanded="true" signature="2166:2227" ph="insert into tbltas... " />
           </folding>
         </state>
       </provider>
@@ -1048,66 +1024,54 @@
     <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1002">
-          <caret line="292" column="23" lean-forward="false" selection-start-line="292" selection-start-column="18" selection-end-line="292" selection-end-column="23" />
+          <caret line="305" column="23" lean-forward="false" selection-start-line="305" selection-start-column="18" selection-end-line="305" selection-end-column="23" />
           <folding>
-            <marker date="1512391367258" expanded="true" signature="176:684" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="189:282" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="290:329" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="335:488" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="496:526" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="540:621" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="633:674" ph="{...}" />
-            <marker date="1512391367258" expanded="true" signature="765:991" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="786:820" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
-            <marker date="1512391367258" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
-            <marker date="1512391367258" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="3457:3646" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="3792:4064" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4010:4041" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4254:4274" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4275:4576" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4300:4576" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4337:4348" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4399:4410" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4466:4477" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="4529:4540" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="4651:4777" ph="select * fro... tblqueue" />
-            <marker date="1512391367258" expanded="true" signature="6005:6275" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="6642:6673" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="6850:6881" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="7277:7308" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="7638:7797" ph="select * fro... tblregistered" />
-            <marker date="1512391367258" expanded="true" signature="8481:8525" ph="select * fro... tblcourses" />
-            <marker date="1512391367258" expanded="true" signature="8833:8870" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="9426:10062" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9483:10062" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9740:9760" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9761:10062" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="9786:10062" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9823:9834" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9885:9896" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="9952:9963" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="10015:10026" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="10137:10263" ph="select * fro... tblqueue" />
-            <marker date="1512391367258" expanded="true" signature="11215:11485" ph="..." />
-            <marker date="1512391367258" expanded="false" signature="11708:11739" ph="..." />
-            <marker date="1512391367258" expanded="true" signature="11966:12062" ph="insert into tblqueue... " />
-            <marker date="1512391367258" expanded="true" signature="12270:12328" ph="update tblco... " />
-            <marker date="1512391367258" expanded="true" signature="12510:12566" ph="update tblco... " />
-            <marker date="1512391367258" expanded="true" signature="12759:12850" ph="select * fro... tblusers" />
-            <marker date="1512391367258" expanded="true" signature="13258:13311" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addCourse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <marker date="1512405168633" expanded="true" signature="174:234" ph="select * fro... tblregistered" />
-            <marker date="1512405168633" expanded="true" signature="710:787" ph="insert into tblregistered... " />
+            <marker date="1512407841991" expanded="true" signature="176:684" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="189:282" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="290:329" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="335:488" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="496:526" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="540:621" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="633:674" ph="{...}" />
+            <marker date="1512407841991" expanded="true" signature="765:991" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="786:820" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1154:1313" ph="select * fro... tblregistered" />
+            <marker date="1512407841991" expanded="true" signature="1398:1457" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1465:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1525:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1802:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="1969:2013" ph="select * fro... tblcourses" />
+            <marker date="1512407841991" expanded="true" signature="2377:2414" ph="select * fro... tblusers" />
+            <marker date="1512407841991" expanded="true" signature="3457:3598" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:10554" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:10556" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12390" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12396" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10116:12398" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10232:10252" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10253:10554" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10278:10554" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10315:10326" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10377:10388" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10444:10455" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="10507:10518" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10629:10755" ph="select * fro... tblqueue" />
+            <marker date="1512407841991" expanded="true" signature="10861:10946" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="10954:12380" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11041:12025" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11236:12007" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11679:11979" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="11707:11977" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12061:12360" ph="..." />
+            <marker date="1512407841991" expanded="false" signature="12200:12231" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12435:12699" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12458:12554" ph="insert into tblqueue... " />
+            <marker date="1512407841991" expanded="true" signature="12738:12941" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="12762:12820" ph="update tblco... " />
+            <marker date="1512407841991" expanded="true" signature="12978:13161" ph="..." />
+            <marker date="1512407841991" expanded="true" signature="13002:13058" ph="update tblco... " />
+            <marker date="1512407841991" expanded="true" signature="13251:13342" ph="select * fro... tblusers" />
+            <marker date="1512407841991" expanded="true" signature="13750:13803" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1141,39 +1105,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setupDB.php">
+    <entry file="file://$PROJECT_DIR$/addCourse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding>
-            <marker date="1512402884729" expanded="true" signature="71:77" ph="..." />
-            <marker date="1512402884729" expanded="true" signature="648:794" ph="create table... tblusers" />
-            <marker date="1512402884729" expanded="true" signature="843:997" ph="create table... tblqueue" />
-            <marker date="1512402884729" expanded="true" signature="1046:1171" ph="create table... tblcourses" />
-            <marker date="1512402884729" expanded="true" signature="1220:1340" ph="create table... tblregistered" />
-            <marker date="1512402884729" expanded="true" signature="1389:1515" ph="create table... tbltas" />
-            <marker date="1512402884729" expanded="true" signature="1623:1782" ph="insert into tblcourses... " />
-            <marker date="1512402884729" expanded="true" signature="1831:1963" ph="insert into tblusers... " />
-            <marker date="1512402884729" expanded="true" signature="2165:2226" ph="insert into ${$table}... " />
+            <marker date="1512405168633" expanded="true" signature="174:234" ph="select * fro... tblregistered" />
+            <marker date="1512405168633" expanded="true" signature="710:787" ph="insert into tblregistered... " />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/setupDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <marker date="1512409775338" expanded="true" signature="71:77" ph="..." />
+            <marker date="1512409775338" expanded="true" signature="649:795" ph="create table... tblusers" />
+            <marker date="1512409775338" expanded="true" signature="844:998" ph="create table... tblqueue" />
+            <marker date="1512409775338" expanded="true" signature="1047:1172" ph="create table... tblcourses" />
+            <marker date="1512409775338" expanded="true" signature="1221:1341" ph="create table... tblregistered" />
+            <marker date="1512409775338" expanded="true" signature="1390:1516" ph="create table... tbltas" />
+            <marker date="1512409775338" expanded="true" signature="1624:1783" ph="insert into tblcourses... " />
+            <marker date="1512409775338" expanded="true" signature="1832:1964" ph="insert into tblusers... " />
+            <marker date="1512409775338" expanded="true" signature="2166:2227" ph="insert into tbltas... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/UMD-Globe-Logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pics/testudo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addPicture.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="198">
+          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pictureUpload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding>
-            <marker date="1512407787915" expanded="true" signature="419:531" ph="insert into tbltas... " />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
