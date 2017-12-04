@@ -41,7 +41,8 @@ a:hover{
 
 
 </style>
-    <!--<meta http-equiv="refresh" content="10"/>-->
+
+    <!-- <meta http-equiv="refresh" content="10"/> -->
 	<div class="jumbotron">
         <h3 style="display: inline-block; width: 60%;"><strong>$title</strong></h3>
         <a href="logout.php" class="nav"><h4>Logout</h4></a>
