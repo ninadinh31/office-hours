@@ -14,7 +14,7 @@ function initDBConnection($host, $user, $dbpassword, $database){
 }
 
 function createDatabase($connection) {
-    $query = "create database officehours";
+    $query = "create database officehours2";
     $connection->query($query);
 }
 function createTables($connection){
