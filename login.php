@@ -20,7 +20,11 @@ $topPart = <<<EOBODY
             <strong>Password: </strong><input type="password" class="form-control" name="password" required/><br/><br/>
 
 			<input type="submit" class="btn btn-info" name="submitLogin" value="Login" style="display: table; margin: 0 auto;"/>
-		</form>
+			<br />
+        </form>
+        <form action="registration.php" method="post">
+            <input type="submit" class="btn btn-info" name="registerNewUser" value="Register New Users" style="display: table; margin: 0 auto;"/>
+        </form>
 </div>
 EOBODY;
 
