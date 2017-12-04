@@ -57,7 +57,7 @@ $query = sprintf("select * from tblregistered join tblcourses on tblregistered.c
 $result = $db_connection->query($query);
 
 if (!$result) {
-    die("Retrieval failed: ". $db_connection->error);
+    die("Retrieval failed: two ". $db_connection->error);
 } else {
     $num_rows = $result->num_rows;
     if ($num_rows > 0) {
@@ -91,7 +91,7 @@ EOBODY;
             $result2 = $db_connection->query($query2);
 
             if (!$result2) {
-                die("Retrieval failed: " . $db_connection->error);
+                die("Retrieval failed: one " . $db_connection->error);
             } else {
                 $num_rows2 = $result2->num_rows;
                 if ($num_rows2 > 0) {
@@ -133,7 +133,7 @@ $query = sprintf("select * from tblregistered join tblcourses on tblregistered.c
 $result = $db_connection->query($query);
 
 if (!$result) {
-    die("Retrieval failed: ". $db_connection->error);
+    die("Retrieval failed: three ". $db_connection->error);
 } else {
     $num_rows = $result->num_rows;
     if ($num_rows > 0) {
@@ -167,7 +167,7 @@ EOBODY;
             $result2 = $db_connection->query($query2);
 
             if (!$result2) {
-                die("Retrieval failed: " . $db_connection->error);
+                die("Retrieval failed: four " . $db_connection->error);
             } else {
                 $num_rows2 = $result2->num_rows;
                 if ($num_rows2 > 0) {
