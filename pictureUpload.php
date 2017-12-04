@@ -10,6 +10,7 @@
     $filename = $uid . '.jpg';
     $docMimeType = "image/jpeg";
 
+    echo $_SESSION['uid'];
     $fileToInsert = $_FILES['fileToUpload']['tmp_name'];
     $fileData = addslashes(file_get_contents($fileToInsert));
     $query = "REPLACE INTO tbltas (uid, pictureName, docMimeType, picture) VALUES ($uid, '$filename', '$docMimeType', '$temp')";
