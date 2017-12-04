@@ -94,7 +94,6 @@ EOBODY;
                 die("Retrieval failed: " . $db_connection->error);
             } else {
                 $num_rows2 = $result2->num_rows;
-                echo($num_rows2);
                 if ($num_rows2 > 0) {
                     $result2->data_seek(0);
                     $row2 = $result2->fetch_array(MYSQLI_ASSOC);
@@ -171,7 +170,6 @@ EOBODY;
                 die("Retrieval failed: " . $db_connection->error);
             } else {
                 $num_rows2 = $result2->num_rows;
-                echo ($num_rows2);
                 if ($num_rows2 > 0) {
                     $result2->data_seek(0);
                     $row2 = $result2->fetch_array(MYSQLI_ASSOC);
@@ -195,10 +193,11 @@ EOBODY;
                 $body .= <<<EOBODY
                  </table ><br/>
     
-                 <input type="submit" name="addToQueue" class="btn btn-info" value="Add Name to Queue" style="display: table; margin: 0 auto;"/>
+                 <input type="submit" name="addToQueue" class="btn btn-info" value="Add Name" style="display: table; margin: 0 auto;"/>
                  <input type="hidden" name="courseid" value="{$row['courseid']}"/>
-            </div>
-        </form>
+            
+        </form><br/>
+</div>
 EOBODY;
             }
         }

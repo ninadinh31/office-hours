@@ -16,7 +16,7 @@ $topPart = <<<EOBODY
 <div class="form-group panel panel-default">
     <h3><strong>Login</strong></h3><br/>
 		<form action="{$_SERVER['PHP_SELF']}" method="post">
-			<strong>UID: </strong><input type="uid" class="form-control" name="uid" required/><br/><br/>
+			<strong>UID: </strong><input type="text" class="form-control" name="uid" required/><br/><br/>
             <strong>Password: </strong><input type="password" class="form-control" name="password" required/><br/><br/>
 
 			<input type="submit" class="btn btn-info" name="submitLogin" value="Login" style="display: table; margin: 0 auto;"/>
