@@ -33,7 +33,7 @@ EOBODY;
 
 $db_connection = initDBConnection($host, $user, $dbpassword, $database);
 
-$query = sprintf("select * from tblregistered join tblcourses on tblregistered.courseid = tblcourses.courseid where uid=%s order by tblcourses.coursename ASC", $_SESSION['uid']);
+$query = sprintf("select * from tblregistered join tblcourses on tblregistered.courseid = tblcourses.courseid where uid='%s' order by tblcourses.coursename ASC", $_SESSION['uid']);
 $result = $db_connection->query($query);
 
 if (!$result) {

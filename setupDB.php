@@ -20,7 +20,7 @@ function createDatabase($connection) {
 function createTables($connection){
     $query = "create table tblusers (firstname varchar(25), lastname varchar(30), uid varchar(8) primary key not null, email varchar (60), password varchar(64))";
     $connection->query($query);
-    $query = "create table tblqueue (uid varchar(8, courseid int(11), priority int(11), queuecheckintime datetime, tacheckintime datetime, primary key (uid, courseid))";
+    $query = "create table tblqueue (uid varchar(8), courseid int(11), priority int(11), queuecheckintime datetime, tacheckintime datetime, primary key (uid, courseid))";
     $connection->query($query);
     $query = "create table tblcourses (courseid int(2) primary key not null auto_increment, coursename varchar(50))";
     $connection->query($query);
