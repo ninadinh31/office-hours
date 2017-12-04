@@ -98,24 +98,30 @@ if (!$result) {
                 $firstname = "Currently None";
                 $lastname = "";
                 $TAPicture="";
+                $taName = "";
             }
 
             $currStudId = "currStud" . $row['courseid'];
 
             $body .= <<<EOBODY
 
-            <form action="{$_SERVER['PHP_SELF']}" method="post">
+            
             <div class="form-group panel panel-default">
             <h4><strong>Course:</strong> {$row['coursename']}</h4>
             <h4><strong>TA:</strong> {$firstname} {$lastname}</h4><br/>
             <img src="$TAPicture" height="100px">
-            <form action="showProfilePicture.php" method="post">
-                <input type="hidden" name="ta_name" value="$taName">
-                <input type="submit" id="submit" name="submit" class="btn btn-info" value="Click to See Enlarged Picture" style="display: table; margin: 0 auto;">
-            </form>
+EOBODY;
+            if ($taName !== "") {
+                $body .= <<<EOBODY
+            <form action = "showProfilePicture.php" method = "post" >
+                <input type = "hidden" name = "ta_name" value = "$taName" >
+                <input type = "submit" id = "submit" name = "submit" class="btn btn-info" value = "Click to See Enlarged Picture" style = "display: table; margin: 0 auto;" >
+            </form >
 
-            <br/>
-
+            <br />
+EOBODY;
+            }
+            $body .= <<<EOBODY
             <h4><strong>Queue:</strong></h4>
                 <table class="table table-hover table-striped" style="margin-right: 1.2em;">
                     <tr>
@@ -160,7 +166,7 @@ EOBODY;
 EOBODY;
                     }
                 }
-                $body .= "</table><br/><div id=\"taNav\">";
+                $body .= "</table><br/><form action=\"{$_SERVER['PHP_SELF']}\" method=\"post\"><div id=\"taNav\">";
 
                 if ($row['currenttaid'] == "") {
                     $body .= "<input type=\"submit\" name=\"startTaHours\" id=\"startTaHours\" class=\"btn btn-info\" value=\"Start TA Hours\" style=\"display: table; margin: 0 auto;\"/>";

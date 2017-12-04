@@ -1,22 +1,26 @@
 <?php
 
     require_once("support.php");
-    $dbconnection = connectToDB($host, $user, $password, $database);
+    require_once("dbLogin.php");
+    require_once("setupDB.php");
+    $db_connection = initDBConnection($host, $user, $dbpassword, $database);
     $fileToRetrieve = $_POST['ta_name'].".jpg";
+    $body = $fileToRetrieve;
 
-    $sqlQuery = "select docData, docMimeType from tbltas where docName = '{$fileToRetrieve}'";
-    $result = mysqli_query($db, $sqlQuery);
+    $query = "select picture, docMimeType from tbltas where picture = '{$fileToRetrieve}'";
+    $result = $db_connection->query($query);
     if ($result) {
-        $recordArray = mysqli_fetch_assoc($result);
+        $result->data_seek(0);
+        $recordArray = $result->fetch_array(MYSQLI_ASSOC);
         header("Content-type: "."{$recordArray['docMimeType']}");
-        echo $recordArray['docData'];
+        $body .= $recordArray['picture'];
         mysqli_free_result($result);
     } else { 				   
-        $body = "<h3>Failed to retrieve document $fileToRetrieve: ".mysqli_error($db)." </h3>";
+        $body = "<h3>Failed to retrieve document $fileToRetrieve: ".mysqli_error($db_connection)." </h3>";
     }
 
     /* Closing */
-    mysqli_close($db);
+    mysqli_close($db_connection);
 
     echo generatePage($body);
 

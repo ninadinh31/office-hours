@@ -14,7 +14,7 @@ function initDBConnection($host, $user, $dbpassword, $database){
 }
 
 function createDatabase($connection) {
-    $query = "create database officehours2";
+    $query = "create database officehours";
     $connection->query($query);
 }
 function createTables($connection){
@@ -34,6 +34,15 @@ function createTables($connection){
     $connection->query($query);
     $query = "insert into tblusers (firstname, lastname, uid, email, password) values ('testfirst', 'testlast', '1234', 'email@gmail.com', '1234')";
     $connection->query($query);
+
+    $fileToInsert = "testudo.jpg";
+    $docMimeType = "image/jpeg";
+    $fileData = file_get_contents($fileToInsert);
+
+    $sqlQuery = "insert into tbltas(uid, pictureName, docMimeType, picture) values ";
+    $sqlQuery .= "('1234', {$fileToInsert}', '{$docMimeType}', '{$fileData}')";
+    //echo ($sqlQuery);
+    $connection->query($sqlQuery);
 }
 
 ?>
