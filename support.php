@@ -1,5 +1,7 @@
 <?php
 
+$mime = "image/jpeg";
+
 function generatePage($body, $title="Example") {
     $page = <<<EOPAGE
 <!doctype html>
