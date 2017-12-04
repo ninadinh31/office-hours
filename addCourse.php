@@ -19,6 +19,7 @@ if (!$result) {
         echo "This course is already in your list";
     } else {
         // submit add course
+
         $query = sprintf("insert into tblregistered (uid, usertype, courseid) values ('%s', '%s', '%s')", $_SESSION['uid'], $_POST['selectUserType'], $_POST['selectCourse']);
 
         // Executing query
@@ -26,7 +27,12 @@ if (!$result) {
         if (!$result) {
             die("Insertion failed: " . $db_connection->error);
         } else {
-            header("Location: classList.php");
+            if ($_POST['selectUserType'] === 'TA' || $_POST['selectUserType'] === 'ta'
+                    || $_POST['selectUserType'] == 'TA' || $_POST['selectUserType'] == 'ta') {
+                header("Location: addPicture.html");
+            } else {
+                header("Location: courseList.php");
+            }
         }
     }
 }
