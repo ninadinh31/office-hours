@@ -11,6 +11,15 @@ $result = $db_connection->query($query);
 if (!$result) {
     die("Deletion failed: ". $db_connection->error);
 } else {
-    header("Location: classList.php");
+    //header("Location: classList.php");
+
+
+    $query = sprintf("DELETE FROM tblqueue WHERE uid='%s' AND courseid='%s'", $_SESSION['uid'], $_GET['courseid']);
+    $result = $db_connection->query($query);
+    if (!$result) {
+        die("Deletion failed: " . $db_connection->error);
+    } else {
+        header("Location: classList.php");
+    }
 }
 ?>

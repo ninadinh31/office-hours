@@ -33,11 +33,11 @@ $topPart = <<<EOBODY
 			<strong>Email: </strong><input type="email" class="form-control" name="email" id="email" required><br /><br />
             <strong>Password: </strong><input type="password" class="form-control" name="password" required/><br/><br/>
 
-			<input type="submit" class="btn btn-info" name="submitRegistration" value="Register" style="display: table; margin: 0 auto;"/>
+			<input type="submit" class="btn btn-info" id="subReg" name="submitRegistration" value="Register" style="display: table; margin: 0 auto;"/>
 		</form>
 		<br />
 		<form action="login.php" method="post">
-		    <input type="submit" class="btn btn-info" id="returnToLogin" name="returnToLogin"  value="Return to Login Page" style="...">
+		    <input type="submit" class="btn btn-info" id="returnToLogin" name="returnToLogin"  value="Return to Login Page" style="display: table; margin: 0 auto;">
         </form>
 </div>
         
