@@ -81,15 +81,23 @@ if (!$result) {
             $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
 
             if ($rowGetTaName['currenttaid'] != "") {
-                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $rowGetTaName['currenttaid']);
+                $taName = $rowGetTaName['currenttaid'];
+                $queryGetTaName = sprintf("select * from tblusers where uid='%s'", $taName);
                 $resultGetTaName = $db_connection->query($queryGetTaName);
                 $resultGetTaName->data_seek(0);
                 $rowGetTaName = $resultGetTaName->fetch_array(MYSQLI_ASSOC);
                 $firstname = $rowGetTaName['firstname'];
                 $lastname = $rowGetTaName['lastname'];
+                $TAPicture = $taName.".jpg";
+                /*$queryGetTAPic = sprintf("select * from tbltas where uid='%s'", $rowGetTaName['currenttaid']);
+                $resultGetTaPic = $db_connection->query($queryGetTAPic);
+                $resultGetTaPic->data_seek(0);
+                $rowGetTaPic = $resultGetTaPic->fetch_array(MYSQLI_ASSOC);
+                $TAPicture =*/
             } else {
                 $firstname = "";
                 $lastname = "";
+                $TAPicture="";
             }
 
             $body .= <<<EOBODY
@@ -98,6 +106,7 @@ if (!$result) {
             <div class="form-group panel panel-default">
             <h4><strong>Course:</strong> {$row['coursename']}</h4>
             <h4><strong>TA:</strong> {$firstname} {$lastname}</h4><br/>
+            <img src="$TAPicture" height="100px">
             <h4><strong>Current Student:</strong> </h4>
 
             <br/>
