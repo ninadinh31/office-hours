@@ -1,11 +1,9 @@
 <?php
 require_once("dbLogin.php");
+require_once("setupDB.php");
 session_start();
 
-$db_connection = new mysqli($host, $user, $password, $database);
-if ($db_connection->connect_error) {
-    die($db_connection->connect_error);
-}
+$db_connection = initDBConnection($host, $user, $dbpassword, $database);
 
 $query = sprintf("select * from tblregistered where uid='%s' and courseid='%s'", $_SESSION['uid'], $_POST['selectCourse']);
 $result = $db_connection->query($query);

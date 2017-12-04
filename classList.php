@@ -1,6 +1,8 @@
 <?php
 require_once("support.php");
 require_once("dbLogin.php");
+require_once("setupDB.php");
+
 session_start();
 $title = "TA Office Hours Class List";
 $errorMessage = "";
@@ -21,20 +23,17 @@ a {
 <div class="form-group panel panel-default">
     <h3><strong>Current Courses:</strong></h3><br/>
     <form action="addCourse.php" name="addCourse" id="addCourse" method="POST">
-			<table class="table table-bordered" style="margin-right: 1.2em;">
+			<table class="table table-hover" style="margin-right: 1.2em;">
             <tr>
                 <th>Course</th>
                 <th>User Type</th>
+                <th></th>
             </tr>	
 EOBODY;
 
+$db_connection = initDBConnection($host, $user, $dbpassword, $database);
 
-$db_connection = new mysqli($host, $user, $dbpassword, $database);
-if ($db_connection->connect_error) {
-    die($db_connection->connect_error);
-}
-
-$query = sprintf("select * from tblregistered join tblcourses on tblregistered.courseid = tblcourses.courseid where uid='%s' order by tblcourses.coursename ASC", $_SESSION['uid']);
+$query = sprintf("select * from tblregistered join tblcourses on tblregistered.courseid = tblcourses.courseid where uid=%s order by tblcourses.coursename ASC", $_SESSION['uid']);
 $result = $db_connection->query($query);
 
 if (!$result) {
@@ -61,10 +60,7 @@ $currentCourses .= <<<EOBODY
 EOBODY;
 
 /* Connecting to the database */
-$db_connection = new mysqli($host, $user, $dbpassword, $database);
-if ($db_connection->connect_error) {
-    die($db_connection->connect_error);
-}
+initDBConnection($host, $user, $dbpassword, $database);
 
 $query = sprintf("select * from tblcourses");
 $result = $db_connection->query($query);
@@ -104,7 +100,7 @@ $currentCourses .= <<<EOBODY
     </table>
 	</form>
 	
-	<a class="btn btn-info" href="#" role="button" style="display: table; margin: 0 auto;">Show Queues</a>
+	<a class="btn btn-info" href="main.php" role="button" style="display: table; margin: 0 auto;">Show Queues</a>
 </div>
 EOBODY;
 
