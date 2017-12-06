@@ -25,7 +25,7 @@ $topPart = <<<EOBODY
 			<br />
         </form>
         <form action="registration.php" method="post">
-            <input type="submit" class="btn btn-info" name="registerNewUser" value="Register New Users" style="display: table; margin: 0 auto;"/>
+            <input type="submit" class="btn btn-info" name="registerNewUser" value="Register New User" style="display: table; margin: 0 auto;"/>
         </form>
 </div>
 EOBODY;
