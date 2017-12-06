@@ -4,7 +4,7 @@ require_once("dbLogin.php");
 require_once("setupDB.php");
 session_start();
 
-$title = "TA Office Hours Waiting Room";
+$title = "TA Office Hours Waiting Room - " . $_SESSION["uid"];
 $body = <<<EOBODY
 <style>
 .jumbotron {
