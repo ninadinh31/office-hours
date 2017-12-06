@@ -19,10 +19,7 @@ function invalid_name(name, maxLength){
 }
 
 function invalid_uid(uid){
-    if(uid.length != 8){
-        alert("here");
-        return true;
-    }
+    
     for(i=0;i<uid.length;i++){
         asciiNum = uid.charCodeAt(i);
         alert(asciiNum);
@@ -46,7 +43,7 @@ function validateRegistration(){
         alertMessage += "Last name must only contain letters and be less than 30 characters long\n";
     }
     if(invalid_uid(uid)){
-        alertMessage += "A valid uid has alength of 8 and contains only letters and/or numbers\n";
+        alertMessage += "A valid uid contains only letters and/or numbers\n";
     }
 
     if(alertMessage === ""){
