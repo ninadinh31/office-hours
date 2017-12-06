@@ -27,8 +27,8 @@ if (!$result) {
         if (!$result) {
             die("Insertion failed: " . $db_connection->error);
         } else {
-            if ($_POST['selectUserType'] === 'TA' || $_POST['selectUserType'] === 'ta'
-                    || $_POST['selectUserType'] == 'TA' || $_POST['selectUserType'] == 'ta') {
+            if (($_POST['selectUserType'] === 'TA' || $_POST['selectUserType'] === 'ta') && !isset($_SESSION['picSet'])) {
+                $_SESSION['picSet'] = true;
                 header("Location: addPicture.html");
             } else {
                 header("Location: classList.php");
