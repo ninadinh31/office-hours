@@ -6,6 +6,7 @@ require_once("setupDB.php");
 session_start();
 $title = "TA Office Hours Class List";
 $errorMessage = "";
+$useridentification = $_SESSION["uid"];
 
 // current courses panel
 $currentCourses = <<<EOBODY
@@ -21,7 +22,7 @@ a {
 }
 </style>
 <div class="form-group panel panel-default">
-    <h3><strong>Current Courses:</strong></h3><br/>
+    <h3><strong>Current Courses: $useridentification </strong></h3><br/>
     <form action="addCourse.php" name="addCourse" id="addCourse" method="POST">
 			<table class="table table-hover" style="margin-right: 1.2em;">
             <tr>
