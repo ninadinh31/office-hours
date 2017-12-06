@@ -1,7 +1,8 @@
-function main(){
+window.onsubmit = validateRegistration;
+/*function main(){
     document.getElementById("subReg").onclick = validateRegistration;
 }
-main();
+main();*/
 
 function invalid_name(name, maxLength){
     if(name.length > maxLength ){
@@ -19,11 +20,13 @@ function invalid_name(name, maxLength){
 
 function invalid_uid(uid){
     if(uid.length != 8){
+        alert("here");
         return true;
     }
     for(i=0;i<uid.length;i++){
         asciiNum = uid.charCodeAt(i);
-        if(asciiNum < 48 || (asciiNum > 57 && asciiNum<65) || (asciiNum > 90 && asciiNum < 97) || asciiNum > 122 || asciiNum != 45){
+        alert(asciiNum);
+        if(asciiNum < 48 || (asciiNum > 57 && asciiNum<65) || (asciiNum > 90 && asciiNum < 97) || asciiNum > 122 || asciiNum === 45){
             return true;
         }
     }
@@ -43,7 +46,7 @@ function validateRegistration(){
         alertMessage += "Last name must only contain letters and be less than 30 characters long\n";
     }
     if(invalid_uid(uid)){
-        alertMessage += "a valid uid has alength of 8 and contains only letters and/or numbers\n";
+        alertMessage += "A valid uid has alength of 8 and contains only letters and/or numbers\n";
     }
 
     if(alertMessage === ""){
