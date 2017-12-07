@@ -19,10 +19,10 @@ function invalid_name(name, maxLength){
 }
 
 function invalid_uid(uid){
-    
+
     for(i=0;i<uid.length;i++){
         asciiNum = uid.charCodeAt(i);
-        alert(asciiNum);
+        //alert(asciiNum);
         if(asciiNum < 48 || (asciiNum > 57 && asciiNum<65) || (asciiNum > 90 && asciiNum < 97) || asciiNum > 122 || asciiNum === 45){
             return true;
         }
